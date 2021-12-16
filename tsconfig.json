@@ -1,4 +1,60 @@
 {
-  "compilerOptions": {},
-  "extends": "expo/tsconfig.base"
+  "extends": "expo/tsconfig.base",
+  "include": [
+    "./src"
+  ],
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "baseUrl": "src",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "jsx": "react-native",
+    "paths": {
+      "@components": [
+        "components"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@assets": [
+        "assets"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@screens": [
+        "screens"
+      ],
+      "@screens/*": [
+        "screens/*"
+      ],
+      "@navigation": [
+        "navigation"
+      ],
+      "@navigation/*": [
+        "navigation/*"
+      ],
+      "@theme": [
+        "theme"
+      ],
+      "@theme/*": [
+        "theme/*"
+      ],
+      "@shared": [
+        "shared"
+      ],
+      "@shared/*": [
+        "shared/*"
+      ],
+      "@hooks": [
+        "hooks"
+      ],
+      "@hooks/*": [
+        "hooks/*"
+      ]
+    }
+  }
 }

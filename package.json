@@ -1,15 +1,29 @@
 {
   "dependencies": {
+    "@dripsy/gradient": "^3.6.0",
+    "@react-navigation/bottom-tabs": "^6.0.9",
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/native-stack": "^6.2.5",
+    "dripsy": "^3.6.0",
     "expo": "^43.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-native": "0.64.3",
+    "react-native-reanimated": "~2.2.0",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-screens": "~3.8.0",
+    "react-native-svg": "12.1.1",
     "react-native-web": "~0.17.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@types/react": "~17.0.21",
     "@types/react-native": "~0.64.12",
+    "babel-plugin-inline-dotenv": "^1.6.0",
+    "dotenv": "^10.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.5.1",
     "typescript": "~4.3.5"
   },
   "scripts": {
@@ -18,6 +32,9 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "version": "1.0.0",
   "private": true,
